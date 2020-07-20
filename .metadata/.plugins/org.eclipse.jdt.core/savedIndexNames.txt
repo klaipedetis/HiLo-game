@@ -1,0 +1,3 @@
+INDEX VERSION 1.131+/home/roman/eclipse-workspace/HiLo game/.metadata/.plugins/org.eclipse.jdt.core
+646308851.index
+500478837.index
