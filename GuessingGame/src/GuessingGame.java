@@ -23,28 +23,28 @@ public class GuessingGame extends JFrame {
 		JLabel lblRomansGuesiiongGame = new JLabel("   Roman`s Guessing Game");
 		lblRomansGuesiiongGame.setFont(new Font("Ubuntu", Font.BOLD, 15));
 		lblRomansGuesiiongGame.setHorizontalAlignment(SwingConstants.CENTER);
-		lblRomansGuesiiongGame.setBounds(0, 23, 450, 20);
+		lblRomansGuesiiongGame.setBounds(0, 39, 450, 20);
 		getContentPane().add(lblRomansGuesiiongGame);
 		
 		JLabel lblNewLabel = new JLabel("  Guess a number between 1 and 100:");
 		lblNewLabel.setToolTipText("");
-		lblNewLabel.setBounds(57, 72, 279, 15);
+		lblNewLabel.setBounds(86, 98, 279, 15);
 		getContentPane().add(lblNewLabel);
 		
 		textField = new JTextField();
 		textField.setHorizontalAlignment(SwingConstants.CENTER);
-		textField.setBounds(333, 66, 47, 27);
+		textField.setBounds(357, 92, 47, 27);
 		getContentPane().add(textField);
 		textField.setColumns(10);
 		
 		JButton btnGuess = new JButton("Guess!");
 		btnGuess.setFont(new Font("Dialog", Font.BOLD, 15));
-		btnGuess.setBounds(174, 117, 117, 25);
+		btnGuess.setBounds(167, 152, 117, 25);
 		getContentPane().add(btnGuess);
 		
 		JLabel lblNewEnterA = new JLabel(" Enter a number above and click Guess!");
 		lblNewEnterA.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewEnterA.setBounds(0, 173, 450, 15);
+		lblNewEnterA.setBounds(0, 216, 450, 15);
 		getContentPane().add(lblNewEnterA);
 		
 			}
