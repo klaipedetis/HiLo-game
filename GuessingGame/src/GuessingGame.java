@@ -31,26 +31,26 @@ public class GuessingGame extends JFrame {
 		lblNewLabel.setBounds(86, 98, 279, 15);
 		getContentPane().add(lblNewLabel);
 		
-		textField = new JTextField();
-		textField.setHorizontalAlignment(SwingConstants.CENTER);
-		textField.setBounds(357, 92, 47, 27);
-		getContentPane().add(textField);
-		textField.setColumns(10);
+		txtGuess = new JTextField();
+		txtGuess.setHorizontalAlignment(SwingConstants.CENTER);
+		txtGuess.setBounds(357, 92, 47, 27);
+		getContentPane().add(txtGuess);
+		txtGuess.setColumns(10);
 		
 		JButton btnGuess = new JButton("Guess!");
 		btnGuess.setFont(new Font("Dialog", Font.BOLD, 15));
 		btnGuess.setBounds(167, 152, 117, 25);
 		getContentPane().add(btnGuess);
 		
-		JLabel lblNewEnterA = new JLabel(" Enter a number above and click Guess!");
-		lblNewEnterA.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewEnterA.setBounds(0, 216, 450, 15);
-		getContentPane().add(lblNewEnterA);
+		JLabel lblOutput = new JLabel(" Enter a number above and click Guess!");
+		lblOutput.setHorizontalAlignment(SwingConstants.CENTER);
+		lblOutput.setBounds(0, 216, 450, 15);
+		getContentPane().add(lblOutput);
 		
 			}
 		
 	private static final long serialVersionUID = 1L;
-	private JTextField textField;
+	private JTextField txtGuess;
 
 	public static void main(String[] args) {
 		// Auto-generated method stub
