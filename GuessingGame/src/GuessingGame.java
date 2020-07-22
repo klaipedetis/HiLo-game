@@ -10,6 +10,9 @@ import javax.swing.JEditorPane;
 import javax.swing.JTextField;
 
 public class GuessingGame extends JFrame {
+	private JTextField txtGuess;
+	private JLabel lblOuput;
+	private int theNumber;
 	public GuessingGame() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setTitle("Roman`s Hi-Lo Guessing Game");
@@ -50,10 +53,30 @@ public class GuessingGame extends JFrame {
 			}
 		
 	private static final long serialVersionUID = 1L;
-	private JTextField txtGuess;
+	
 
 	public static void main(String[] args) {
 		// Auto-generated method stub
 
+	}
+
+
+	public JLabel getLblOuput() {
+		return lblOuput;
+	}
+
+
+	public void setLblOuput(JLabel lblOuput) {
+		this.lblOuput = lblOuput;
+	}
+
+
+	public int getTheNumber() {
+		return theNumber;
+	}
+
+
+	public void setTheNumber(int theNumber) {
+		this.theNumber = theNumber;
 	}
 }
