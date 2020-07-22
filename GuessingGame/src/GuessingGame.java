@@ -6,30 +6,54 @@ import javax.swing.SwingConstants;
 import java.awt.Font;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import javax.swing.JEditorPane;
+import javax.swing.JTextField;
 
 public class GuessingGame extends JFrame {
 	public GuessingGame() {
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setTitle("Roman`s Hi-Lo Guessing Game");
+		getContentPane().setLayout(null);
 		
-		JButton btnGuess = new JButton("Guess");
-		btnGuess.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) {
+		JEditorPane editorPane = new JEditorPane();
+		editorPane.setEnabled(false);
+		editorPane.setBounds(0, 257, 450, 15);
+		getContentPane().add(editorPane);
+		
+		JLabel lblRomansGuesiiongGame = new JLabel("   Roman`s Guessing Game");
+		lblRomansGuesiiongGame.setFont(new Font("Ubuntu", Font.BOLD, 15));
+		lblRomansGuesiiongGame.setHorizontalAlignment(SwingConstants.CENTER);
+		lblRomansGuesiiongGame.setBounds(0, 23, 450, 20);
+		getContentPane().add(lblRomansGuesiiongGame);
+		
+		JLabel lblNewLabel = new JLabel("  Guess a number between 1 and 100:");
+		lblNewLabel.setToolTipText("");
+		lblNewLabel.setBounds(57, 72, 279, 15);
+		getContentPane().add(lblNewLabel);
+		
+		textField = new JTextField();
+		textField.setHorizontalAlignment(SwingConstants.CENTER);
+		textField.setBounds(333, 66, 47, 27);
+		getContentPane().add(textField);
+		textField.setColumns(10);
+		
+		JButton btnGuess = new JButton("Guess!");
+		btnGuess.setFont(new Font("Dialog", Font.BOLD, 15));
+		btnGuess.setBounds(174, 117, 117, 25);
+		getContentPane().add(btnGuess);
+		
+		JLabel lblNewEnterA = new JLabel(" Enter a number above and click Guess!");
+		lblNewEnterA.setHorizontalAlignment(SwingConstants.CENTER);
+		lblNewEnterA.setBounds(0, 173, 450, 15);
+		getContentPane().add(lblNewEnterA);
+		
 			}
-		});
-		btnGuess.setFont(new Font("Dialog", Font.BOLD, 14));
-		getContentPane().add(btnGuess, BorderLayout.CENTER);
 		
-		JLabel lblNewLabel = new JLabel("Guessing Game");
-		lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
-		getContentPane().add(lblNewLabel, BorderLayout.NORTH);
-	}
-
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
+	private JTextField textField;
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		// Auto-generated method stub
 
 	}
 }
