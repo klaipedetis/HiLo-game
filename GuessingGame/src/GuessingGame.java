@@ -13,6 +13,28 @@ public class GuessingGame extends JFrame {
 	private JTextField txtGuess;
 	private JLabel lblOuput;
 	private int theNumber;
+	
+	//Guessing digit and report to user 
+	public void checkGuess() {
+		String guessText = txtGuess.getText();
+		message = "";
+	int guess = Integer.parseInt(guessText);	
+	if (guess < theNumber)
+		message = guess + "is too low. Try again!";
+	else if (guess > theNumber)
+		message = guess + "is too high. Trey again!";
+	else
+		message = guess + "is correct. You win!";
+	lblOuput.setText(message);
+	}//end of metod checkGuess
+	
+	//start new Game
+	public void newGame() {
+		
+		
+	}//end of metod newGame
+	
+	
 	public GuessingGame() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setTitle("Roman`s Hi-Lo Guessing Game");
@@ -53,6 +75,7 @@ public class GuessingGame extends JFrame {
 			}
 		
 	private static final long serialVersionUID = 1L;
+	private String message;
 	
 
 	public static void main(String[] args) {
